@@ -1,6 +1,6 @@
 # Build
 #  docker build -t test_grid .
-FROM node:8
+FROM node:8-slim
 
 RUN apt-get -qqy update \
   && apt-get -qqy install \

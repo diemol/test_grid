@@ -5,6 +5,7 @@ FROM node:8-slim
 RUN apt-get -qqy update \
   && apt-get -qqy install \
     git-core \
+    vim \
   && rm -rf /var/lib/apt/lists/*
 
 RUN git clone https://github.com/diemol/test_grid.git

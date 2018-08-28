@@ -1,6 +1,6 @@
 var webdriver = require('selenium-webdriver'),
     driver = new webdriver.Builder()
-        .usingServer('http://docker.for.mac.localhost:4444/wd/hub')
+        .usingServer('http://gateway.docker.internal:4444/wd/hub')
         .withCapabilities({'browserName': 'chrome'})
         .build();    
 
